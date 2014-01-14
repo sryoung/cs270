@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_57wLcHzxEeOX-KtCS1IM6Q" name="NewModel">
+  <ownedComment xmi:id="_PXO78Hz6EeOX-KtCS1IM6Q" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body xsi:nil="true"/>
+  </ownedComment>
+  <ownedComment xmi:id="_X-yAkHz6EeOX-KtCS1IM6Q" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Empty comment</body>
+  </ownedComment>
+  <ownedComment xmi:id="_YeXfkHz6EeOX-KtCS1IM6Q" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Empty comment</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1TQrcHzzEeOX-KtCS1IM6Q" name="Trip"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__mtRMHzzEeOX-KtCS1IM6Q" name="Event">
+    <ownedAttribute xmi:id="_h_opMHz0EeOX-KtCS1IM6Q" name="Festival"/>
+    <ownedAttribute xmi:id="_inf6cHz0EeOX-KtCS1IM6Q" name="Performance"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IxLcsHz0EeOX-KtCS1IM6Q" name="Location">
+    <ownedAttribute xmi:id="_LO3AEHz0EeOX-KtCS1IM6Q" name="Country"/>
+    <ownedAttribute xmi:id="_MFS40Hz0EeOX-KtCS1IM6Q" name="State"/>
+    <ownedAttribute xmi:id="_M_HcwHz0EeOX-KtCS1IM6Q" name="GPS"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VzAUQHz0EeOX-KtCS1IM6Q" name="Lodging">
+    <ownedAttribute xmi:id="_XVWQwHz0EeOX-KtCS1IM6Q" name="Apartment"/>
+    <ownedAttribute xmi:id="_YDWmQHz0EeOX-KtCS1IM6Q" name="Hotel"/>
+    <ownedAttribute xmi:id="_Yp9TQHz0EeOX-KtCS1IM6Q" name="Cruise ship"/>
+    <ownedAttribute xmi:id="_ZoW1MHz0EeOX-KtCS1IM6Q" name="Tent"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_caKOcHz0EeOX-KtCS1IM6Q" name="Customer"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5BovwHz1EeOX-KtCS1IM6Q" name="Activities">
+    <generalization xmi:id="_lOJhsHz2EeOX-KtCS1IM6Q" general="__mtRMHzzEeOX-KtCS1IM6Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LYmqkHz3EeOX-KtCS1IM6Q" name="City"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QaJR0Hz3EeOX-KtCS1IM6Q" name="locationsToCitys" memberEnd="_QaJ44Hz3EeOX-KtCS1IM6Q _QaLHAHz3EeOX-KtCS1IM6Q" navigableOwnedEnd="_QaLHAHz3EeOX-KtCS1IM6Q">
+    <ownedComment xmi:id="_LWEMkHz6EeOX-KtCS1IM6Q" annotatedElement="_QaJR0Hz3EeOX-KtCS1IM6Q">
+      <body xsi:nil="true"/>
+    </ownedComment>
+    <ownedEnd xmi:id="_QaJ44Hz3EeOX-KtCS1IM6Q" name="locations" type="_IxLcsHz0EeOX-KtCS1IM6Q" aggregation="composite" association="_QaJR0Hz3EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QaKf8Hz3EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QaKf8Xz3EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_QaLHAHz3EeOX-KtCS1IM6Q" name="citys" type="_LYmqkHz3EeOX-KtCS1IM6Q" association="_QaJR0Hz3EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QaLHAXz3EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QaLHAnz3EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jya4oHz4EeOX-KtCS1IM6Q" name="Customers" memberEnd="_jya4oXz4EeOX-KtCS1IM6Q _jycGwXz4EeOX-KtCS1IM6Q" navigableOwnedEnd="_jycGwXz4EeOX-KtCS1IM6Q">
+    <ownedEnd xmi:id="_jya4oXz4EeOX-KtCS1IM6Q" name="customers" type="_caKOcHz0EeOX-KtCS1IM6Q" association="_jya4oHz4EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jybfsHz4EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jycGwHz4EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_jycGwXz4EeOX-KtCS1IM6Q" name="trips" type="_1TQrcHzzEeOX-KtCS1IM6Q" association="_jya4oHz4EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jyct0Hz4EeOX-KtCS1IM6Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jyct0Xz4EeOX-KtCS1IM6Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0VhekHz4EeOX-KtCS1IM6Q" name="Trips" memberEnd="_0VhekXz4EeOX-KtCS1IM6Q _0Vissnz4EeOX-KtCS1IM6Q" navigableOwnedEnd="_0Vissnz4EeOX-KtCS1IM6Q">
+    <ownedEnd xmi:id="_0VhekXz4EeOX-KtCS1IM6Q" name="trips" type="_1TQrcHzzEeOX-KtCS1IM6Q" association="_0VhekHz4EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VissHz4EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0VissXz4EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_0Vissnz4EeOX-KtCS1IM6Q" name="activitiess" type="_5BovwHz1EeOX-KtCS1IM6Q" association="_0VhekHz4EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VjTwHz4EeOX-KtCS1IM6Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0VjTwXz4EeOX-KtCS1IM6Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GRdfsHz5EeOX-KtCS1IM6Q" name="Trips" memberEnd="_GReGwHz5EeOX-KtCS1IM6Q _GRet0nz5EeOX-KtCS1IM6Q" navigableOwnedEnd="_GRet0nz5EeOX-KtCS1IM6Q">
+    <ownedEnd xmi:id="_GReGwHz5EeOX-KtCS1IM6Q" name="trips" type="_1TQrcHzzEeOX-KtCS1IM6Q" association="_GRdfsHz5EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GRet0Hz5EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GRet0Xz5EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_GRet0nz5EeOX-KtCS1IM6Q" name="events" type="__mtRMHzzEeOX-KtCS1IM6Q" association="_GRdfsHz5EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GRfU4Hz5EeOX-KtCS1IM6Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GRfU4Xz5EeOX-KtCS1IM6Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UICN8Hz5EeOX-KtCS1IM6Q" name="Trips" memberEnd="_UICN8Xz5EeOX-KtCS1IM6Q _UIDcEXz5EeOX-KtCS1IM6Q" navigableOwnedEnd="_UIDcEXz5EeOX-KtCS1IM6Q">
+    <ownedEnd xmi:id="_UICN8Xz5EeOX-KtCS1IM6Q" name="trips" type="_1TQrcHzzEeOX-KtCS1IM6Q" association="_UICN8Hz5EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UIC1AHz5EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UIDcEHz5EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_UIDcEXz5EeOX-KtCS1IM6Q" name="locations" type="_IxLcsHz0EeOX-KtCS1IM6Q" association="_UICN8Hz5EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UIEDIHz5EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UIEDIXz5EeOX-KtCS1IM6Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XJWC0Hz5EeOX-KtCS1IM6Q" name="Trips" memberEnd="_XJWC0Xz5EeOX-KtCS1IM6Q _XJXQ8Xz5EeOX-KtCS1IM6Q" navigableOwnedEnd="_XJXQ8Xz5EeOX-KtCS1IM6Q">
+    <ownedEnd xmi:id="_XJWC0Xz5EeOX-KtCS1IM6Q" name="trips" type="_1TQrcHzzEeOX-KtCS1IM6Q" association="_XJWC0Hz5EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJWp4Hz5EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XJXQ8Hz5EeOX-KtCS1IM6Q" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_XJXQ8Xz5EeOX-KtCS1IM6Q" name="lodgings" type="_VzAUQHz0EeOX-KtCS1IM6Q" association="_XJWC0Hz5EeOX-KtCS1IM6Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJX4AHz5EeOX-KtCS1IM6Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XJX4AXz5EeOX-KtCS1IM6Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
