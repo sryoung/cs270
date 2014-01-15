@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_57wLcHzxEeOX-KtCS1IM6Q" name="NewModel">
-  <ownedComment xmi:id="_PXO78Hz6EeOX-KtCS1IM6Q" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
-    <body xsi:nil="true"/>
-  </ownedComment>
   <ownedComment xmi:id="_X-yAkHz6EeOX-KtCS1IM6Q" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
-    <body>Empty comment</body>
+    <body>Trip can have several activities</body>
   </ownedComment>
-  <ownedComment xmi:id="_YeXfkHz6EeOX-KtCS1IM6Q" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
-    <body>Empty comment</body>
+  <ownedComment xmi:id="_MG5_sH4jEeOSid0HqVYInA" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Event may be part of a trip</body>
+  </ownedComment>
+  <ownedComment xmi:id="_eMUF4H4jEeOSid0HqVYInA" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Trips have a location</body>
+  </ownedComment>
+  <ownedComment xmi:id="_i7xeoH4jEeOSid0HqVYInA" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>City is the certain location of a trip</body>
+  </ownedComment>
+  <ownedComment xmi:id="_nTvkcH4jEeOSid0HqVYInA" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Trip must have lodging</body>
+  </ownedComment>
+  <ownedComment xmi:id="_rWzKMH4jEeOSid0HqVYInA" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Customer pays for trip &amp; takes trip</body>
   </ownedComment>
   <packagedElement xmi:type="uml:Class" xmi:id="_1TQrcHzzEeOX-KtCS1IM6Q" name="Trip"/>
   <packagedElement xmi:type="uml:Class" xmi:id="__mtRMHzzEeOX-KtCS1IM6Q" name="Event">
@@ -91,6 +100,61 @@
     <ownedEnd xmi:id="_XJXQ8Xz5EeOX-KtCS1IM6Q" name="lodgings" type="_VzAUQHz0EeOX-KtCS1IM6Q" association="_XJWC0Hz5EeOX-KtCS1IM6Q">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJX4AHz5EeOX-KtCS1IM6Q" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XJX4AXz5EeOX-KtCS1IM6Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rh2uMH4kEeOSid0HqVYInA" name="People"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s4JywH4kEeOSid0HqVYInA" name="Trip">
+    <ownedAttribute xmi:id="_dwn9gH4lEeOSid0HqVYInA" name="Cost"/>
+    <ownedAttribute xmi:id="_jfeWsH4lEeOSid0HqVYInA" name="Days"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_y1-cEH4kEeOSid0HqVYInA" name="Activities">
+    <ownedAttribute xmi:id="_xu1YYH4lEeOSid0HqVYInA" name="Festival"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9vyeQH4kEeOSid0HqVYInA" name="Local tour">
+    <ownedAttribute xmi:id="_4Ty6MH4lEeOSid0HqVYInA" name="Start time"/>
+    <ownedAttribute xmi:id="_5T_L4H4lEeOSid0HqVYInA" name="End time"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_C-GWMH4lEeOSid0HqVYInA" name="Lodging">
+    <ownedAttribute xmi:id="_E9MqsH4mEeOSid0HqVYInA" name="Number of nights"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_V_IXIH4lEeOSid0HqVYInA" name="Peoples" memberEnd="_V_I-MH4lEeOSid0HqVYInA _V_KMUX4lEeOSid0HqVYInA" navigableOwnedEnd="_V_KMUX4lEeOSid0HqVYInA">
+    <ownedEnd xmi:id="_V_I-MH4lEeOSid0HqVYInA" name="peoples" type="_rh2uMH4kEeOSid0HqVYInA" association="_V_IXIH4lEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V_JlQH4lEeOSid0HqVYInA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V_KMUH4lEeOSid0HqVYInA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_V_KMUX4lEeOSid0HqVYInA" name="trips" type="_s4JywH4kEeOSid0HqVYInA" association="_V_IXIH4lEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V_KzYH4lEeOSid0HqVYInA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V_KzYX4lEeOSid0HqVYInA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m4Vv8H4lEeOSid0HqVYInA" name="Trips" memberEnd="_m4WXAH4lEeOSid0HqVYInA _m4YMMH4lEeOSid0HqVYInA" navigableOwnedEnd="_m4YMMH4lEeOSid0HqVYInA">
+    <ownedEnd xmi:id="_m4WXAH4lEeOSid0HqVYInA" name="trips" type="_s4JywH4kEeOSid0HqVYInA" association="_m4Vv8H4lEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m4XlIH4lEeOSid0HqVYInA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m4XlIX4lEeOSid0HqVYInA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m4YMMH4lEeOSid0HqVYInA" name="activitiess" type="_y1-cEH4kEeOSid0HqVYInA" association="_m4Vv8H4lEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m4YzQH4lEeOSid0HqVYInA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m4ZaUH4lEeOSid0HqVYInA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0gxUgH4lEeOSid0HqVYInA" name="activitiessToLocal trips" memberEnd="_0gx7kH4lEeOSid0HqVYInA _0g0X0H4lEeOSid0HqVYInA" navigableOwnedEnd="_0g0X0H4lEeOSid0HqVYInA">
+    <ownedEnd xmi:id="_0gx7kH4lEeOSid0HqVYInA" name="activitiess" type="_y1-cEH4kEeOSid0HqVYInA" aggregation="composite" association="_0gxUgH4lEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0gzwwH4lEeOSid0HqVYInA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gzwwX4lEeOSid0HqVYInA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_0g0X0H4lEeOSid0HqVYInA" name="local trips" type="_9vyeQH4kEeOSid0HqVYInA" association="_0gxUgH4lEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0g1l8H4lEeOSid0HqVYInA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0g2NAH4lEeOSid0HqVYInA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AoDPYH4mEeOSid0HqVYInA" name="Trips" memberEnd="_AoD2cH4mEeOSid0HqVYInA _AoFron4mEeOSid0HqVYInA" navigableOwnedEnd="_AoFron4mEeOSid0HqVYInA">
+    <ownedEnd xmi:id="_AoD2cH4mEeOSid0HqVYInA" name="trips" type="_s4JywH4kEeOSid0HqVYInA" association="_AoDPYH4mEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AoFroH4mEeOSid0HqVYInA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AoFroX4mEeOSid0HqVYInA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_AoFron4mEeOSid0HqVYInA" name="lodgings" type="_C-GWMH4lEeOSid0HqVYInA" association="_AoDPYH4mEeOSid0HqVYInA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AoHg0H4mEeOSid0HqVYInA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AoHg0X4mEeOSid0HqVYInA" value="*"/>
     </ownedEnd>
   </packagedElement>
 </uml:Model>
