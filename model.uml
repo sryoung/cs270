@@ -18,6 +18,9 @@
   <ownedComment xmi:id="_rWzKMH4jEeOSid0HqVYInA" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
     <body>Customer pays for trip &amp; takes trip</body>
   </ownedComment>
+  <ownedComment xmi:id="_XwI5QH-7EeOPjZmPrXuBIg" annotatedElement="_57wLcHzxEeOX-KtCS1IM6Q">
+    <body>Are comments like on hw1q1 necessary?</body>
+  </ownedComment>
   <packagedElement xmi:type="uml:Class" xmi:id="_1TQrcHzzEeOX-KtCS1IM6Q" name="Trip"/>
   <packagedElement xmi:type="uml:Class" xmi:id="__mtRMHzzEeOX-KtCS1IM6Q" name="Event">
     <ownedAttribute xmi:id="_h_opMHz0EeOX-KtCS1IM6Q" name="Festival"/>
