@@ -1,0 +1,177 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+BIOMEDIN210, Homework #2
+\end_layout
+
+\begin_layout Author
+Lennon Chimbumu (lennonc), Stephanie Young (sryoung)
+\end_layout
+
+\begin_layout Part*
+Problem #1 (Considerations in modeling)
+\end_layout
+
+\begin_layout Enumerate
+The closed-world assumption is that anything that is not known to be true
+ must be considered false.
+\end_layout
+
+\begin_layout Enumerate
+The open-world assumption is that failure to derive a conclusion does not
+ mean the opposite is true.
+\end_layout
+
+\begin_layout Enumerate
+The unique-name assumption in the assumption that different names refer
+ to different entities.
+\end_layout
+
+\begin_layout Enumerate
+In Frames, if two objects have different names, they are assumed to be different.
+ So the unique name assumption applies to Frames.
+\end_layout
+
+\begin_layout Enumerate
+The open-world assumption applies to OWL.
+\end_layout
+
+\begin_layout Enumerate
+These assumptions affect the choice of ontological language we might choose
+ in modeling a certain domain.
+\end_layout
+
+\begin_layout Enumerate
+After discussion, we believe that both open and closed-world assumptions
+ have their place.
+ Take the simple example: if I do not have information about whether person
+ X is a spy, it is not safe to assume that they are a spy (open), or that
+ they are not a spy (closed).
+ For the NSA, it is safer for them to assume that the world is 
+\begin_inset Quotes eld
+\end_inset
+
+negative,
+\begin_inset Quotes erd
+\end_inset
+
+ as in, assume 
+\begin_inset Quotes eld
+\end_inset
+
+everyone
+\begin_inset Quotes erd
+\end_inset
+
+ is a spy and only trust those who have been specifically white-listed.
+ Thus, it makes more sense for the NSA to use an open-world assumption,
+ especially if they are interested in modeling who has contact with whom
+ and who knows what information.
+ It is 
+\begin_inset Quotes eld
+\end_inset
+
+safer
+\begin_inset Quotes erd
+\end_inset
+
+ for the NSA to assume that if no information is available, that there is
+ contact between parties and that information is being transferred and thus
+ to be conservative in their actions, which falls under an open-world assumption
+ which states that under circumstances when a conclusion cannot be derived,
+ we cannot assume that the opposite is true.
+\end_layout
+
+\begin_layout Part*
+Problem #2 (Modeling with Protege)
+\end_layout
+
+\begin_layout Standard
+Lennon
+\end_layout
+
+\begin_layout Part*
+Problem #3 (Description Logics (DL) & Reasoning)
+\end_layout
+
+\begin_layout Standard
+Lennon
+\end_layout
+
+\begin_layout Part*
+Problem #4 (The Semantic Web)
+\end_layout
+
+\begin_layout Standard
+Stephanie
+\end_layout
+
+\begin_layout Part*
+Problem #5 (Ontology Applications)
+\end_layout
+
+\begin_layout Standard
+Stephanie
+\end_layout
+
+\end_body
+\end_document
