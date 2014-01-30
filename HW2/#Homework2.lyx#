@@ -170,9 +170,7 @@ genetic disease
 disease.
  
 \series default
-This hierachy may be useful for determining the best treatment for a disease.
- In the case of sickle cell anemia, we may want to use methods in gene therapy
- to try and treat it.
+This hierachy may be useful for determining the best treatment for a disease
 \end_layout
 
 \begin_layout Enumerate

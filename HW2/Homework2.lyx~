@@ -67,8 +67,8 @@ BIOMEDIN210, Homework #2
 Lennon Chimbumu (lennonc), Stephanie Young (sryoung)
 \end_layout
 
-\begin_layout Part*
-Problem #1 (Considerations in modeling)
+\begin_layout Paragraph*
+Problem 1 (Considerations in modeling)
 \end_layout
 
 \begin_layout Enumerate
@@ -141,79 +141,442 @@ safer
  we cannot assume that the opposite is true.
 \end_layout
 
-\begin_layout Part*
-Problem #2 (Modeling with Protege)
+\begin_layout Paragraph
+Problem 2 (Modeling with Protege)
 \end_layout
 
+\begin_layout Enumerate
+[TODO]
+\end_layout
+
+\begin_layout Enumerate
+[TODO]
+\end_layout
+
+\begin_layout Enumerate
+[TODO]
+\end_layout
+
+\begin_layout Paragraph
+Problem 3
+\end_layout
+
+\begin_layout Enumerate
+A class is unsatisfiable if there is a contradiction in the ontology that
+ implies that the class cannot have any instances.
+ In OWL, such a class would entail to 
+\series bold
+owl:nothing.
+\end_layout
+
+\begin_layout Enumerate
+An ontology is inconsistent if it is impossible to interpret the axioms
+ in the ontology such that there is at least one class which has an instance.
+\end_layout
+
+\begin_layout Enumerate
+An ontology is incoherent if it contains at least one unsatisfiable class.
+\end_layout
+
+\begin_layout Enumerate
+The OWL2 Profiles are: OWL 2 EL, OWL 2 QL and OWL 2 RL.
+ 
+\series bold
+OWL 2 EL 
+\series default
+was designed for biomedical ontologies because it can handle very large
+ ontologies and has very fast reasoning capabilities, both of which are
+ essential when dealing with biomedical ontologies.
+\end_layout
+
+\begin_layout Enumerate
+[TODO]
+\end_layout
+
+\begin_layout Enumerate
+i.
+ The satisfiable classes are: 
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-Lennon
+ii.
+ The entailed classes are:
 \end_layout
 
-\begin_layout Part*
-Problem #3 (Description Logics (DL) & Reasoning)
-\end_layout
-
-\begin_layout Standard
-Lennon
-\end_layout
-
-\begin_layout Part*
-Problem #4 (The Semantic Web)
-\end_layout
-
-\begin_layout Standard
-Stephanie
-\end_layout
-
-\begin_layout Part*
-Problem #5 (Ontology Applications)
-\end_layout
-
+\end_deeper
 \begin_layout Paragraph*
-a).
+Problem 4 (The Semantic Web)
 \end_layout
 
-\begin_layout Standard
-Aerobic Respiration: Biological Process
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=SPARQL,tabsize=2"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+PREFIX actor: <http://data.linkedmdb.org/resource/actor/>
 \end_layout
 
-\begin_layout Standard
-Epithelial Cell Differentiation: Biological Process
+\begin_layout Plain Layout
+
+PREFIX movie: <http://data.linkedmdb.org/resource/movie/>
 \end_layout
 
-\begin_layout Standard
-Enzyme Binding: Molecular Function
+\begin_layout Plain Layout
+
+PREFIX country: <http://data.linkedmdb.org/resource/country/> 
 \end_layout
 
-\begin_layout Standard
-Synovial Bursa: Not classified
+\begin_layout Plain Layout
+
+PREFIX capital: <http://data.linkedmdb.org/resource/movie/country_capital/>
 \end_layout
 
-\begin_layout Standard
-Mad-Dow Disease: Not classified
+\begin_layout Plain Layout
+
+SELECT distinct ?all_capitals
 \end_layout
 
-\begin_layout Standard
-Endoplasmic Reticulum: Cellular Component
+\begin_layout Plain Layout
+
+FROM <http://xmlns.com/foaf/0.1/> #not used 
 \end_layout
 
-\begin_layout Paragraph*
-a).
+\begin_layout Plain Layout
+
+{
 \end_layout
 
-\begin_layout Standard
-Fruit morphogenesis
+\begin_layout Plain Layout
+
+SERVICE <http://data.linkedmdb.org/sparql>
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	?all_actors movie:actor_name "Patrick Stewart".
+\end_layout
+
+\begin_layout Plain Layout
+
+	?all_movies movie:actor ?all_actors.
+\end_layout
+
+\begin_layout Plain Layout
+
+	?all_movies movie:country ?all_countries.
+\end_layout
+
+\begin_layout Plain Layout
+
+	?all_countries movie:country_capital ?all_capitals.
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Problem 5 (Ontology Applications)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Term
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Domain
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aerobic respiration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 Biological Process
 \end_layout
 
-\begin_layout Paragraph*
-b).
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Epithelial Cell Differentiation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biological Process
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Enzyme Binding
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Molecular Function
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Synovial Bursa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not Classified
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mad-Cow Disease
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Not Classified
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Endoplasmic Reticulum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cellular Component
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The 5 resulting products of fruit morphogenesis are in the screenshot below:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 5parta2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+And the terms associated with 
+\series bold
+ABO1
+\series default
+ are in the screenshots below
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 5parta4.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 5parta5.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=GO:0005152&session_i
 d=4326amigo1390782135
 \end_layout
