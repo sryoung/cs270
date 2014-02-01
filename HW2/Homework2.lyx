@@ -149,9 +149,77 @@ Problem 2 (Modeling with Protege)
 \end_layout
 
 \begin_layout Enumerate
-[TODO]
+The class structure for the data provided looks like:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Q2Part1a.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+Drug
+\series default
+ class looks like:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Q2Part1b.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 The Hierachy classifies sickle cell anemia as an 
 \series bold
@@ -162,6 +230,10 @@ which is a subclass of
 autosomal genetic disease 
 \series default
 which is a subclass of 
+\series bold
+monogenetic disease
+\series default
+ which is a subclass of 
 \series bold
 genetic disease
 \series default
@@ -176,9 +248,73 @@ This hierachy may be useful for determining the best treatment for a disease.
 \end_layout
 
 \begin_layout Enumerate
-[TODO]
+Jessica Walk's record looks like:
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Jessica Walk.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+John Doe's record looks like:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename John Doe.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Paragraph
 Problem 3
 \end_layout
@@ -212,18 +348,141 @@ was designed for biomedical ontologies because it can handle very large
 \end_layout
 
 \begin_layout Enumerate
-[TODO]
+An entailed axiom directly follows from an ontology because it has been
+ explicitly asserted in that ontology.
+ Inferred axioms arise from the relationships among the classes.
+ These two are the same because OWL automatically maintains the relationships
+ between classes as you enter them.
 \end_layout
 
 \begin_layout Enumerate
 i.
- The satisfiable classes are: 
+ The 
+\series bold
+satisfiable
+\series default
+ classes are: A, B, C and D.
+ The only 
+\series bold
+unstatisfiable
+\series default
+ class is E
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
 ii.
- The entailed classes are:
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A SubClassOf D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+entailed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A SubClassOf B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+entailed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A SubClassOf B or D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+entailed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E SubClassOf E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+entailed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E SubClassOf B and not B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+not entailed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -284,6 +543,11 @@ SERVICE <http://data.linkedmdb.org/sparql>
 
 \begin_layout Plain Layout
 
+#replace Patrick Stewart with actor name
+\end_layout
+
+\begin_layout Plain Layout
+
 	?all_actors movie:actor_name "Patrick Stewart".
 \end_layout
 
@@ -315,6 +579,18 @@ SERVICE <http://data.linkedmdb.org/sparql>
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+Assume that all actors have starred in movies and all movies have actors.
+\end_layout
+
+\begin_layout Itemize
+Assume that a movie is shot in a particular country.
+\end_layout
+
+\begin_layout Itemize
+Assume that all countries have capitals.
 \end_layout
 
 \begin_layout Paragraph
@@ -599,21 +875,43 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=GO:0005152&session_i
-d=4326amigo1390782135
+The Classification of interleukin-1 is in the diagram below:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-Ontology: Molecular Function
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Question5 Part3.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-(Give the entire classification)...is the classification the ontology?
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Blocks the binding of interleukin-1 to the interleukin-1 receptor complex.
 \end_layout
 
+\end_deeper
 \end_body
 \end_document

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://protege.stanford.edu/bmi210/clinic#"
+     xml:base="http://protege.stanford.edu/bmi210/clinic"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://protege.stanford.edu/bmi210/clinic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#hasDateOfBirth -->
+
+    <owl:ObjectProperty rdf:about="http://protege.stanford.edu/bmi210/clinic#hasDateOfBirth">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://protege.stanford.edu/bmi210/clinic#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Clinic -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Clinic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://protege.stanford.edu/bmi210/clinic#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/bmi210/clinic#Name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://protege.stanford.edu/bmi210/clinic#hasDateOfBirth"/>
+                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/bmi210/clinic#DateOfBirth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Counselor -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Counselor">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Cream -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Cream">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#DateOfBirth -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#DateOfBirth">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Drug -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Drug">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Employee -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Employee">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Liquid -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Liquid">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Name -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Name">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Nurse -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Nurse">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Patients -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Patients">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Person -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Person">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Clinic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Phamarcist -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Phamarcist">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Physician -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Physician">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Pill -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Pill">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Therapy -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Therapy">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#TherapyDog -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#TherapyDog">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Therapy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege.stanford.edu/bmi210/clinic#Treatment -->
+
+    <owl:Class rdf:about="http://protege.stanford.edu/bmi210/clinic#Treatment">
+        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/bmi210/clinic#Clinic"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

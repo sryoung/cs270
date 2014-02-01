@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#"
+     xml:base="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canBeVisitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canBeVisitedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canTake -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canTake"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canVisit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canVisit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasDateOfBirth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasDateOfBirth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasForm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasForm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPatient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPhysician -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPhysician"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSpeciality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSpeciality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSymptoms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#wentTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#wentTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasDateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasDateOfBirth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isSeeing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isSeeing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Counselor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Counselor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Cream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Cream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#DateOfBirth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#DateOfBirth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Fever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Fever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Nausea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Nausea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Nurse">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#OverTheCounter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#OverTheCounter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canTake"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Drug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPhysician"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canBeVisitedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#TherapyDog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSymptoms"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPhysician"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#PatientID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#PatientID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Name"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasDateOfBirth"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#DateOfBirth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Pharmacist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Pharmacist">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPatient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Pill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Pill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Prescription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Prescription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#SoreThroat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#SoreThroat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Speciality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Speciality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#TherapyDog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#TherapyDog">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canVisit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Vomiting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Vomiting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#acetominophen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#acetominophen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#doxycycline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#doxycycline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#erthromycin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#erthromycin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#ibuprofen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#ibuprofen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#naproxen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#naproxen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#NameOfDrug"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#FormOfDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Dosage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canHave"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#HowToAcquireDrug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Jessica_Walk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Jessica_Walk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#SoreThroat"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasPhysician"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasDateOfBirth"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#DateOfBirth"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasID"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#PatientID"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasSymptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Fever"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasDateOfBirth rdf:datatype="&xsd;dateTime">04/05/1962</hasDateOfBirth>
+        <hasPhysician rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Jon_Borian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#John_Doe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#John_Doe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Patient"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canTake"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#ibuprofen"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Cream"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#canTake"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#acetominophen"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#hasForm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Pill"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Jon_Borian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Jon_Borian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#isA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2#Physician"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

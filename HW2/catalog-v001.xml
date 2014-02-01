@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1391201097838" name="http://protege.stanford.edu/bmi210/clinic" uri="clinic%20ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1391201097838" name="http://www.semanticweb.org/lennon/ontologies/2014/0/clinicV2" uri="ClinicV2.owl"/>
+    </group>
+</catalog>
