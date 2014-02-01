@@ -82,6 +82,8 @@ The closed-world assumption is that anything that is not known to be true
 \begin_layout Enumerate
 The open-world assumption is that failure to derive a conclusion does not
  mean the opposite is true.
+ It is the assumption that the truth-value of a statement is actually independen
+t of whether or not it is known by any single observer or agent to be true.
 \end_layout
 
 \begin_layout Enumerate
@@ -609,7 +611,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -768,6 +770,14 @@ Cellular Component
 
 \end_layout
 
+\begin_layout Standard
+Synovial bursa and mad-cow disease are not classified in GO because they
+ are not Gene Ontology terms.
+ A GO term by definition is an initiative to unify the representation of
+ a gene and gene product attribute across all species.
+ Neither Synovial Bursa nor Mad-Cow fit this specification.
+\end_layout
+
 \end_inset
 
 
@@ -790,7 +800,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -827,7 +837,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -856,7 +866,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
