@@ -125,7 +125,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -355,34 +355,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Paragraph
-Problem 3.
-\end_layout
-
-\begin_layout Paragraph
-Problem 4.
-\end_layout
-
-\begin_layout Paragraph
-Problem 5.
-\end_layout
-
-\begin_layout Paragraph
-Problem 6.
-\end_layout
-
-\begin_layout Paragraph
-Problem 7.
-\end_layout
-
-\begin_layout Paragraph
-Problem 8.
-\end_layout
-
-\begin_layout Enumerate
-Lennon
 \end_layout
 
 \end_body
