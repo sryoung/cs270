@@ -159,29 +159,17 @@ In order to solve this puzzle using the propose and revise method, we can
  If any of the constraints are violated, we remove the 1 and and insert
  the next number in the sequence.
  Again, we check if the entry violates the constraints.
- If it doesn't we mark it as a 
-\begin_inset Formula $decision\ point$
-\end_inset
-
- and proceed to the next blank square and apply the same algorithm.
+ If it doesn't we mark it as a decision point and proceed to the next blank
+ square and apply the same algorithm.
  
 \end_layout
 
 \begin_layout Standard
-If at any during the process we run into a conflict on the puzzle we go
- back to our previous decision point and try a different solution that does
- not violate our constraints.
- In this way, we backtrack throuh all the point we made a decision and propose
- a different solution to a square until the entire puzzle is solved.
+If we 
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-The solved puzzle would look like:
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -425,7 +413,6 @@ status collapsed
 
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Todo
 \end_layout

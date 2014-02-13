@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,8 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.25in
+\rightmargin 1.25in
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -110,9 +113,69 @@ Problem 2.
 \end_layout
 
 \begin_layout Enumerate
-Todo
+The initial values of the puzzle are the squares that already have numbers
+ written in them, we'll call these our seeds.
+ The constraints of the puzzle are:
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Each of the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ regions have to contain only numbers unique from 1 to 4.
+\end_layout
+
+\begin_layout Enumerate
+Each row has to have only unique numbers from 1 to 4.
+\end_layout
+
+\begin_layout Enumerate
+Each column has to have only unique numbers from 1 to 4.
+\end_layout
+
+\begin_layout Enumerate
+All the squares of the puzzle must be filled in and constraints 
+\series bold
+a
+\series default
+, 
+\series bold
+b 
+\series default
+and 
+\series bold
+c
+\series default
+ must be met for the puzzle to be considered solved.
+\end_layout
+
+\begin_layout Standard
+In order to solve this puzzle using the propose and revise method, we can
+ start at the top right square of the puzzle.
+ If the square is empty, we insert a 1.
+ The we check that our constraints are met.
+ If any of the constraints are violated, we remove the 1 and and insert
+ the next number in the sequence.
+ Again, we check if the entry violates the constraints.
+ If it doesn't we mark it as a 
+\begin_inset Formula $decision\ point$
+\end_inset
+
+ and proceed to the next blank square and apply the same algorithm.
+ 
+\end_layout
+
+\begin_layout Standard
+If at any during the process we run into a conflict on the puzzle we go
+ back to our previous decision point and try a different solution that does
+ not violate our constraints.
+ In this way, we backtrack throuh all the point we made a decision and propose
+ a different solution to a square until the entire puzzle is solved.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 \begin_inset Box Frameless
 position "t"
@@ -125,7 +188,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -355,6 +418,38 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Todo
+\end_layout
+
+\begin_layout Paragraph
+Problem 3.
+\end_layout
+
+\begin_layout Paragraph
+Problem 4.
+\end_layout
+
+\begin_layout Paragraph
+Problem 5.
+\end_layout
+
+\begin_layout Paragraph
+Problem 6.
+\end_layout
+
+\begin_layout Enumerate
+Lennon
+\end_layout
+
+\begin_layout Paragraph
+Problem 7.
+\end_layout
+
+\begin_layout Paragraph
+Problem 8.
 \end_layout
 
 \end_body
