@@ -177,6 +177,11 @@ If at any during the process we run into a conflict on the puzzle we go
 
 \end_deeper
 \begin_layout Enumerate
+The solved puzzle would look like:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -420,8 +425,22 @@ status collapsed
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 Todo
+\end_layout
+
+\begin_layout Enumerate
+In order to describe sudoku as a search problem, we need to define the 
+\series bold
+goal state
+\series default
+.
+ In this case the goal state is a state where all the constraints of the
+ sudoku puzzle(listed in part a) are satisfied.
+ If we model the search problem as a graph, the nodes will be every possible
+ state that the puzzle can have and the edges would the the entry that got
+ us to that state.
 \end_layout
 
 \begin_layout Paragraph

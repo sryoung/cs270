@@ -430,6 +430,26 @@ status collapsed
 Todo
 \end_layout
 
+\begin_layout Enumerate
+In order to describe sudoku as a search problem, we need to define the 
+\series bold
+goal state
+\series default
+.
+ In this case the goal state is a state where all the constraints of the
+ sudoku puzzle(listed in part a) are satisfied.
+ If we model the search problem as a graph, the nodes will be every possible
+ state that the puzzle can have and the edges would be the entry that got
+ us to that state.
+ We then start from the initial state and try every digit as a solution
+ to the puzzle.
+ If we get to a state where the constraints are violated, we mark that particula
+r path as bad and we backtrack to the last known good state.
+ We then take a different edge from that state and continue solving.
+ We stop when we get to a node that represents the goal state.
+ If no such node exists, we report that the puzzle has no solution.
+\end_layout
+
 \begin_layout Paragraph
 Problem 3.
 \end_layout
