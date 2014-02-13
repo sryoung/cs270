@@ -1,0 +1,27 @@
+; Wed Oct 11 13:19:45 PDT 2006
+; 
+;+ (version "3.1.1")
+;+ (build "Build 216")
+
+([Jess+engine] of  %3AJESS-ENGINE
+)
+
+([minimycin_00082] of  Assertion
+
+	(concept "female")
+	(value TRUE))
+
+([minimycin_00083] of  Assertion
+
+	(concept "catheterization")
+	(value TRUE))
+
+([minimycin_Instance_0] of  Assertion
+
+	(concept "cancer_chemotherapy")
+	(value TRUE))
+
+([minimycin_Instance_10000] of  Assertion
+
+	(concept "mycellia_in_urine")
+	(value TRUE))

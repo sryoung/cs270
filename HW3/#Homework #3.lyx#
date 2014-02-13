@@ -443,8 +443,11 @@ goal state
  us to that state.
  We then start from the initial state and try every digit as a solution
  to the puzzle.
- If we get to a state where the constraints are violated, we backtrack to
- the last known good state and we try solving again from 
+ If we get to a state where the constraints are violated, we mark that particula
+r path as bad and we backtrack to the last known good state.
+ We then take a different edge from that state and continue solving.
+ We stop when we get to a node that represents the goal state.
+ If no such node exists, we report that the puzzle has no solution.
 \end_layout
 
 \begin_layout Paragraph
@@ -469,6 +472,81 @@ Lennon
 
 \begin_layout Paragraph
 Problem 7.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+(defrule R8a ""   
+\end_layout
+
+\begin_layout Plain Layout
+
+	(object (is-a Assertion)
+\end_layout
+
+\begin_layout Plain Layout
+
+     (concept "cancer_chemotherapy")(value TRUE))   
+\end_layout
+
+\begin_layout Plain Layout
+
+=> (make-instance (str-cat Assertion (gensym*)) of Assertion           (concept
+ "immunosuppressed")(value TRUE)) )
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Instances of Assertion: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+abnormal_urologic_anatomy
+\end_layout
+
+\begin_layout Itemize
+cancer_chemotherapy
+\end_layout
+
+\begin_layout Itemize
+catheterization
+\end_layout
+
+\begin_layout Itemize
+female
+\end_layout
+
+\begin_layout Itemize
+mycellia_in_urine
+\end_layout
+
+\begin_layout Itemize
+urologic manipulation
+\end_layout
+
+\begin_layout Standard
+Instances of Identity
+\end_layout
+
+\begin_layout Itemize
+None
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Add diagram here.
+ Ask TA about this question tomorrow
 \end_layout
 
 \begin_layout Paragraph
