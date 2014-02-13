@@ -98,14 +98,86 @@ They are able to “learn” by updating probabilities.
 
 \end_deeper
 \begin_layout Enumerate
-Propose and revise, heuristic classification, or skeletal plan refinement?
+After reading papers on propose & revise:
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+http://www.dia.fi.upm.es/grupos/I&K/00-propose-revise-system.pdf
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Advances in Knowledge Acquisition"
+target "http://books.google.com/books?id=ggD9oMTPNc0C&pg=PA24&lpg=PA24&dq=propose+and+revise&source=bl&ots=mIijp8kgv5&sig=Idjo_IMMcrnfj28Rx4A46P0JOEU&hl=en&sa=X&ei=4mj8UtyEKpGEogTT5YKIDA&ved=0CCcQ6AEwAA#v=onepage&q=propose%20and%20revise&f=false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+http://link.springer.com/chapter/10.1007/978-1-4684-7122-9_4
+\end_layout
+
+\begin_layout Standard
+Heuristic classification:
+\end_layout
+
+\begin_layout Itemize
+ftp://reports.stanford.edu/pub/cstr/reports/cs/tr/85/1066/CS-TR-85-1066.pdf
+\end_layout
+
+\begin_layout Standard
+Skeletal plan refinement:
+\end_layout
+
+\begin_layout Itemize
+http://download.springer.com/static/pdf/235/art%253A10.1007%252FBF00244995.pdf?auth6
+6=1392450919_08e65cf9b243df8e1069770f22fae3fe&ext=.pdf
+\end_layout
+
+\begin_layout Standard
+we've decided that the skeletal plan refinement is the PSM that best describes
+ how we get dressed in the morning.
+ According to the paper, a skeletal plan is a sequence of generalized steps,
+ which, when instantiated by specific operations in a specific problem context,
+ will solve a given problem.
+ In the case of getting dressed in the morning, we follow a sequence of
+ general steps to put the clothes on, and these steps instantiated in a
+ context determines our choice of clothing.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 What is the difference between a classification method and a constructive
  method? Give an example of how a diagnostic task can be solved by either
  method.
  You may use examples from class.
+ In machine learning and statistics, classification is the problem of identifyin
+g to which of a set of categories a new observation belongs on the basis
+ of a training set of data containing observations.
+ A constructive method is a method in which a new contribution is developed,
+ the contribution being a new theory, algorithm, model, software, or framework
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Source: http://www.springer.com/computer/swe/book/978-3-540-51369-8
+\end_layout
+
+\begin_layout Standard
+A diagnostic task can be solved by either method, in a classification method,
+ observations would have to be gathered and input into a learning model.
+ This model can make new predictions based on the observations.
+ In a constructive method, a researcher would construct a way to solve the
+ task and ask the computer to execute.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[what examples from class?]
 \end_layout
 
 \begin_layout Paragraph
@@ -427,7 +499,9 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-Todo
+Define some data abstraction..
+ Define some solution abstraction.
+ Do heuri
 \end_layout
 
 \begin_layout Enumerate
@@ -438,9 +512,9 @@ goal state
 .
  In this case the goal state is a state where all the constraints of the
  sudoku puzzle(listed in part a) are satisfied.
- If we model the search problem as a graph, the nodes will be every possible
- state that the puzzle can have and the edges would be the entry that got
- us to that state.
+ If we model the puzzle as a graph search, the nodes will be the states
+ that the puzzle possible state that the puzzle can have and the edges would
+ be the entry that got us to that state.
  We then start from the initial state and try every digit as a solution
  to the puzzle.
  If we get to a state where the constraints are violated, we mark that particula
@@ -454,12 +528,204 @@ r path as bad and we backtrack to the last known good state.
 Problem 3.
 \end_layout
 
+\begin_layout Enumerate
+Sensitivity is called the true positive rate and measures the proportion
+ of actual positives which are correctly identified (the percentage of sick
+ people who were correctly identified as having the condition).
+ Specificity is called the true negative rate and measures the proportion
+ of negatives which were correctly identified (the percentage of healthy
+ people who were correctly identified as not having the condition).
+ Source: http://en.wikipedia.org/wiki/Sensitivity_and_specificity.
+ Thus, if a researcher finds much more variability in specificity than sensitivi
+ty, this means that the researcher has found more variability in the true
+ negative rate than the true positive rate.
+ This means that radiologists are more consistently detecting cancers, but
+ are more sporadic in identifying healthy people as having or not having
+ cancer.
+ From a practical standpoint, this means that for cancer, radiologists are
+ conservative and are more comfortable with false positives (say a healthy
+ person has cancer) than false negatives (say a cancerous person is healthy).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Sensitivity=\frac{TruePositive}{TruePositive+FalseNegative}=\frac{CorrectlyDiagnosedCancer}{AllPeopleWithCancer}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Specificity=\frac{TrueNegative}{TrueNegative+FalsePositive}=\frac{CorrectlyDiagmosedHealthyPeople}{AllHealthyPeople}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is unlikely that there would be more variability in specificity than
+ sensitivity when detecting cancer, because the denominator for specificity
+ is so much larger than the denominator for sensitivity.
+ Because radiologists are generally conservative, they would lean towards
+ having false positive > false negative.
+ Thus, the denominator for specificty would be larger.
+ In addition, since there are generally more healthy people than people
+ with cancer, the true negative count will be greater than the true positive
+ cancer, thus again, the denominator for specificty will be greater.
+ When the denominator is greater, it is harder to see lots of variability.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The positive predicted value (PPV) is defined as: 
+\begin_inset Formula $\frac{TruePositives}{TruePositives+FalsePositives}=\frac{TruePositives}{AllPositives}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+This means that radiologists are evaluated essentially on what percentage
+ of people they say have cancer actually in fact have cancer.
+\end_layout
+
+\begin_layout Standard
+Perhaps radiologists are trained to be conservative, their false negative
+ count is probably very low.
+ Thus, evaluating them by sensitivity/specificty thus would not be a good
+ metric in order to distinguish radiologists.
+ Instead, radiologists are evaluated by what percetage of all 
+\begin_inset Quotes eld
+\end_inset
+
+cancerous
+\begin_inset Quotes erd
+\end_inset
+
+ patients actually end up having cancer.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If my mother is going to get her yearly mammogram, I would recommend a radiologi
+st with high sensitivity.
+ This means that he/she has a very high percentage of correctly diagnosing
+ someone with cancer out of all the people who have cancer.
+ I would rather the radiologist be conservative and trigger on low-risk
+ signs (low specificity) in order to reduce the risk of missing a case when
+ cancer is actually present (high sensitivity).
+\end_layout
+
 \begin_layout Paragraph
 Problem 4.
 \end_layout
 
+\begin_layout Enumerate
+If 1 out of every 1000 people on the website would make a good match for
+ me.
+ If a match score ranges from 0 to 1, then a threshold score of 
+\begin_inset Formula $1/1000=0.001$
+\end_inset
+
+ would give the best classification accuracy.
+\end_layout
+
+\begin_layout Enumerate
+The accuracy of classification is the number of correctly classified/the
+ total number of classified.
+\end_layout
+
+\begin_layout Enumerate
+[HUH? Do they want a number?]
+\end_layout
+
+\begin_layout Enumerate
+To do
+\end_layout
+
+\begin_layout Enumerate
+To do
+\end_layout
+
 \begin_layout Paragraph
 Problem 5.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Sensitivity=\frac{TruePositive}{TruePositive+FalseNegative}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Specificity=\frac{TrueNegative}{TrueNegative+FalsePositive}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Probability(PersonEnjoysJoke|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|EnjoysJoke)*P(EnjoysJoke))}{P(EnjoysPinacoladas)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=PersonEnjoysJoke$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=PersonEnjoysPinacoladas$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{(P(S|D)*P(D))}{P(S)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and from the lecture notes, it follows that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{P(S|D)*P(D)}{P(S|D)*P(D)+[1-P(\neg S|\neg D)][1-P(D)]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{Sensitivity*Prevalence}{(Sensitivity*Prevalence)+(1-Specificity)*(1-Prevalence)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{.999*P(D)}{.999*P(D)+(1-.90)*(1-P(D)}=P(T2|T1)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P(DS|T1*T2)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -546,11 +812,25 @@ None
 \end_deeper
 \begin_layout Enumerate
 Add diagram here.
+ Ask TA about this question tomorrow
 \end_layout
 
 \begin_layout Paragraph
 Problem 8.
 \end_layout
 
+\begin_layout Enumerate
+This is some text
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Sensitivity=\frac{}{}=\frac{}{}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
