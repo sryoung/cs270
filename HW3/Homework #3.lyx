@@ -618,8 +618,10 @@ Problem 4.
 \end_layout
 
 \begin_layout Enumerate
-If 1 out of every 1000 people on the website would make a good match for
- me.
+Each person has an MS score with relationship to you.
+ An MS score pass a certain threshold indicates a GM.
+ From the problem state, 1 out of every 1000 people on the website would
+ make a good match for me.
  If a match score ranges from 0 to 1, then a threshold score of 
 \begin_inset Formula $1/1000=0.001$
 \end_inset
@@ -630,6 +632,35 @@ If 1 out of every 1000 people on the website would make a good match for
 \begin_layout Enumerate
 The accuracy of classification is the number of correctly classified/the
  total number of classified.
+ Accuracy = TP + TN/TP + FP + FN + TN.
+ Accuracy = (sensitivity)(prevalence) + (specificity)(1-prevalence).
+ Prevalence = 1/1000.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Sensitivity=\frac{TruePositive}{TruePositive+FalseNegative}=\frac{CorrectlyClassifiedGM}{AllGM}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Specificity=\frac{TrueNegative}{TrueNegative+FalsePositive}=\frac{CorrectlyClassifiedNotGM}{AllNotGM}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We are classifying 200 individuals using this scoring system.
+ So the denominator should be 200.
+ Because of our programming mistake, we accidentally gave everybody a score
+ of 0.01, which based on our threshold score, means that everyone is a good
+ match.
+ But because we know only 1 out of every 1000 individual should be a GM
+ for me, we know that out of 200 individuals, we will have no good matches.
+ Therefore, our TP + TN = 0 whereas our TP + FP + FN + TN = 200.
+ So our accuracy is 0/200 = 0.
 \end_layout
 
 \begin_layout Enumerate

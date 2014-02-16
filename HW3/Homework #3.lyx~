@@ -710,7 +710,7 @@ and from the lecture notes, it follows that
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(D|S)=\frac{.999*P(D)}{.999*P(D)+(1-.90)*(1-P(D)}=P(T2|T1)$
+\begin_inset Formula $P(D|S)=\frac{.999*0.001}{.999*0.001+(1-.90)*(1-0.001)}=0.0099=P(T2|T1)$
 \end_inset
 
  
