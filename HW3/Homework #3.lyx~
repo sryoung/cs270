@@ -695,14 +695,14 @@ Problem 5.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Probability(PersonEnjoysJoke|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|EnjoysJoke)*P(EnjoysJoke))}{P(EnjoysPinacoladas)}$
+\begin_inset Formula $Probability(GoodMatch|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|GoodMatch)*P(GoodMatch))}{P(EnjoysPinacoladas)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D=PersonEnjoysJoke$
+\begin_inset Formula $D=GoodMatch$
 \end_inset
 
 
@@ -749,12 +749,86 @@ and from the lecture notes, it follows that
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $P(T2|T1)$
+\begin_inset Formula $Sensitivity=\frac{TruePositive}{TruePositive+FalseNegative}$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $Specificity=\frac{TrueNegative}{TrueNegative+FalsePositive}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Probability(PersonEnjoysJoke|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|EnjoysJoke)*P(EnjoysJoke))}{P(EnjoysPinacoladas)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D=PersonEnjoysJoke$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=PersonEnjoysPinacoladas$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{(P(S|D)*P(D))}{P(S)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+and from the lecture notes, it follows that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{P(S|D)*P(D)}{P(S|D)*P(D)+[1-P(\neg S|\neg D)][1-P(D)]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{Sensitivity*Prevalence}{(Sensitivity*Prevalence)+(1-Specificity)*(1-Prevalence)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.999*0.001+(1-.90)*(1-0.001)}=0.0099=P(T2|T1)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Paragraph
 Problem 6.
 \end_layout
