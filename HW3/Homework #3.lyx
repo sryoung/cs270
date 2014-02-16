@@ -822,13 +822,34 @@ and from the lecture notes, it follows that
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(D|S)=\frac{.999*0.001}{.999*0.001+(1-.90)*(1-0.001)}=0.0099$
+\begin_inset Formula $Sensitivity=\frac{PosT2Test}{EveryoneLikesJokes}=\frac{.999}{1}$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula $Specificity=\frac{NegT2Test}{EveryoneDoesn'tLikeJokes}=\frac{.90}{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Prevalence=\frac{PosT2Test}{EveryoneLikesJokes+EveryoneDoesn'tLikeJokes}=\frac{.999}{2}=0.4995$
+\end_inset
+
+ 
+\end_layout
+
 \end_deeper
+\begin_layout Standard
+\begin_inset Formula $P(D|S)=\frac{.999*0.4995}{(.999*0.4995)+(1-.90)*(1-0.4995)}=.90884$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph
 Problem 6.
 \end_layout
