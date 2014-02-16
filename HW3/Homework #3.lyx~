@@ -741,7 +741,7 @@ and from the lecture notes, it follows that
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.9*0.001+(1-.999)*(1-0.001)}=0.47=P(T2|T1)$
+\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.9*0.001+(1-.999)*(1-0.001)}=0.47)$
 \end_inset
 
  
@@ -749,7 +749,7 @@ and from the lecture notes, it follows that
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $P(DS|T1*T2)$
+\begin_inset Formula $P(T2|T1)$
 \end_inset
 
 

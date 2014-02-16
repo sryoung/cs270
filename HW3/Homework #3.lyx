@@ -695,14 +695,14 @@ Problem 5.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Probability(PersonEnjoysJoke|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|EnjoysJoke)*P(EnjoysJoke))}{P(EnjoysPinacoladas)}$
+\begin_inset Formula $Probability(GoodMatch|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|GoodMatch)*P(GoodMatch))}{P(EnjoysPinacoladas)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D=PersonEnjoysJoke$
+\begin_inset Formula $D=GoodMatch$
 \end_inset
 
 
@@ -749,7 +749,7 @@ and from the lecture notes, it follows that
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $P(DS|T1*T2)$
+\begin_inset Formula $P(T2|T1)$
 \end_inset
 
 
