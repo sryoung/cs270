@@ -501,7 +501,7 @@ status collapsed
 \begin_layout Enumerate
 Define some data abstraction..
  Define some solution abstraction.
- Do heuri
+ Perform heuristics over the data and solution abstractions
 \end_layout
 
 \begin_layout Enumerate
@@ -819,18 +819,54 @@ Add diagram here.
 Problem 8.
 \end_layout
 
-\begin_layout Enumerate
-This is some text
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset Formula $Sensitivity=\frac{}{}=\frac{}{}$
+The article describes how Netflix catalogues the movies in its repetoire
+ by genre.
+ It provides a high level description of the process by which Netflix gets
+ the genre data and also describes how they use the data in producing relevant
+ recommendations for its customers.
+ The author states that his motivations for getting the genre data was his
+ fascination at 
+\begin_inset Quotes eld
 \end_inset
 
- 
+how vast their set of personalised genres needed to be to describe the entire
+ hollywood universe
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This prompted him to reverse enginner Netflix's genre listing and uncovered
+ that they had 76, 897 unique ways to describe their movies.
+ He also discovered that Netflix spends a lot of time, effort and expertise
+ manually categorizing these movies using hundreds of different markers,
+ ranging from the period the movie was set, to the age range the movie targets.
+ Some tags even get as specific as the moral status of the characters.
+ From this, Netflix develops ontological data for its vast collection of
+ movies and uses these data to personalise the viewing experience for its
+ customers.
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+One of the main concepts we learned from class was the importance of classifying
+ data.
+ Since Netflix builds ontologies of their catalogue, it is easy for them
+ to precisely describe the movies in their offering.
+ These ontologies have also given Netflix an advantage over their competitors.
+ This underscores the importance of the availability of succicnt, well formed
+ data in problem solving.
+ Another important concept we learned from class is that ontologies are
+ often large and non-trivial, this is true in Netflix's because they have
+ over 76,000 different genres and it is also true for biomedicine if we
+ simply consider the Gene Ontology.
+ An important hallmark of the Netflix system is that it's intelligence is
+ built mostly on top of inputs from human beings.
+ That is to say that without people tagging the movies, Netflix's system
+ may not have been as successful as it has proved to be.
+ This goes back to our lecture on building intelligent systems.
+ Systems in biomedicine also require a lot of human input in order to make
+ them seem intelligent and useful.
+\end_layout
+
 \end_body
 \end_document
