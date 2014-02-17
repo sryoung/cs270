@@ -495,9 +495,24 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-Define some data abstraction..
- Define some solution abstraction.
- Perform heuristics over the data and solution abstractions
+In the classification method of problem solving, the problem solver selects
+ from a set of pre-enumerated solutions and attempts to find a solution
+ from this pre-existing set.
+ If no correct soultions exist, the problem solver attempts to apply heuristic
+ classification methods so that solution features can be matched.
+ In the case of our sudoku problem, If no candidate solutions for the puzzle
+ exist, we would build data abstraction of problem and build a heuristic
+ reasoner for it.
+ Then as we tried to solve the puzzle, we would compare the features of
+ the abstracted problem to the features of a solved problem.
+ In the case of sudoku, the features of a solved problem would be defined
+ by the parameters set in part 1 above.
+ If we do not find a solution when do apply the heuristic, we introduce
+ more data into the system.
+ That is to say, we add a new digit to the proposed sudoku solution then
+ compare the features again.
+ This process continues until we find a solution or we have exhausted every
+ possible proposed solution.
 \end_layout
 
 \begin_layout Enumerate
@@ -644,6 +659,7 @@ The accuracy of classification is the number of correctly classified/the
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $Specificity=\frac{TrueNegative}{TrueNegative+FalsePositive}=\frac{CorrectlyClassifiedNotGM}{AllNotGM}$
 \end_inset
@@ -651,6 +667,7 @@ The accuracy of classification is the number of correctly classified/the
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 We are classifying 200 individuals using this scoring system.
  So the denominator should be 200.
@@ -749,27 +766,13 @@ and from the lecture notes, it follows that
 
 \end_deeper
 \begin_layout Enumerate
-\begin_inset Formula $Sensitivity=\frac{TruePositive}{TruePositive+FalseNegative}$
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula $Specificity=\frac{TrueNegative}{TrueNegative+FalsePositive}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $Probability(PersonEnjoysJoke|PersonEnjoysPinacoladas)=\frac{(P(EnjoysPinacoladas|EnjoysJoke)*P(EnjoysJoke))}{P(EnjoysPinacoladas)}$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula $D=PersonEnjoysJoke$
 \end_inset
@@ -842,7 +845,6 @@ and from the lecture notes, it follows that
  
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Formula $P(D|S)=\frac{.999*0.4995}{(.999*0.4995)+(1-.90)*(1-0.4995)}=.90884$
 \end_inset
@@ -850,12 +852,38 @@ and from the lecture notes, it follows that
 
 \end_layout
 
+\end_deeper
 \begin_layout Paragraph
 Problem 6.
 \end_layout
 
 \begin_layout Enumerate
-Lennon
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Q6partA.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
@@ -933,8 +961,32 @@ None
 
 \end_deeper
 \begin_layout Enumerate
-Add diagram here.
- Ask TA about this question tomorrow
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename HW3Q7.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph
