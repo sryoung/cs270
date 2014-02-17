@@ -923,12 +923,10 @@ The probability of T1 = true and T2 = false is: 0.53
 The probability of T1 = false and T2 = true is: 0.4948
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
-The probability of T1 = false and T2 = true is: 0.91
+The probability of T1 = false and T2 = false is: 0.09
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Paragraph
 Problem 7.
