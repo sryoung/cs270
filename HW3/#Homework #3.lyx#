@@ -501,13 +501,18 @@ In the classification method of problem solving, the problem solver selects
  If no correct soultions exist, the problem solver attempts to apply heuristic
  classification methods so that solution features can be matched.
  In the case of our sudoku problem, If no candidate solutions for the puzzle
- exists, we would build data abstraction of problem and build a heuristic
+ exist, we would build data abstraction of problem and build a heuristic
  reasoner for it.
  Then as we tried to solve the puzzle, we would compare the features of
  the abstracted problem to the features of a solved problem.
  In the case of sudoku, the features of a solved problem would be defined
  by the parameters set in part 1 above.
- 
+ If we do not find a solution when do apply the heuristic, we introduce
+ more data into the system.
+ That is to say, we add a new digit to the proposed sudoku solution then
+ compare the features again.
+ This process continues until we find a solution or we have exhausted every
+ possible proposed solution.
 \end_layout
 
 \begin_layout Enumerate
@@ -881,6 +886,30 @@ status collapsed
 
 \end_layout
 
+\begin_layout Enumerate
+The probability of GM given T1= true is: 0.781
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+The probability of GM given T1= false is: 0.2922
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+probability of GM given T2 = true is: 0.4948
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+probability of GM given T2 = false is: 0.0904
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The probability of MC given all 4 permutations of T1 and T2 is: 
+\end_layout
+
 \begin_layout Paragraph
 Problem 7.
 \end_layout
@@ -967,7 +996,7 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1037,7 +1066,7 @@ One of the main concepts we learned from class was the importance of classifying
  them seem intelligent and useful.
  Without experts performing research and cataloging all of our biomedical
  data, our bioinformatic systems would not be nearly as useful as they are
- today.x
+ today.
 \end_layout
 
 \end_body
