@@ -85,7 +85,7 @@ A PSM has several many advantages over a rule-based system:
 \begin_deeper
 \begin_layout Enumerate
 They can account for partially random outcomes or decisions that are not
- under the control fo the decision maker.
+ under the control of the decision maker.
 \end_layout
 
 \begin_layout Enumerate
@@ -134,8 +134,14 @@ Skeletal plan refinement:
 \end_layout
 
 \begin_layout Itemize
-http://download.springer.com/static/pdf/235/art%253A10.1007%252FBF00244995.pdf?auth6
-6=1392450919_08e65cf9b243df8e1069770f22fae3fe&ext=.pdf
+\begin_inset CommandInset href
+LatexCommand href
+name "Skeletal Plan Refinement Paper"
+target "• http://download.springer.com/static/pdf/235/art%253A10.1007%252FBF00244995.pdf?auth66=1392450919_08e65cf9b243df8e1069770f22fae3fe&ext=.pdf"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -164,18 +170,61 @@ Source: http://www.springer.com/computer/swe/book/978-3-540-51369-8
 \end_layout
 
 \begin_layout Standard
-A diagnostic task can be solved by either method, in a classification method,
+Thus, a classification method does not need to 
+\begin_inset Quotes eld
+\end_inset
+
+understand
+\begin_inset Quotes erd
+\end_inset
+
+ anything about the problem because it uses prior observations to make predictio
+ns.
+ In contrast, a constructive method needs to understand the problem space
+ in order to 
+\begin_inset Quotes eld
+\end_inset
+
+construct
+\begin_inset Quotes erd
+\end_inset
+
+ a solution to a problem.
+ A diagnostic task can be solved by either method, in a classification method,
  observations would have to be gathered and input into a learning model.
  This model can make new predictions based on the observations.
  In a constructive method, a researcher would construct a way to solve the
  task and ask the computer to execute.
+ For example, let's use 
+\begin_inset Quotes eld
+\end_inset
+
+predicting likelihood of heart disease
+\begin_inset Quotes erd
+\end_inset
+
+ as a diagnostic task.
+ This can be solved by either method.
+ In a classification method, a data set of people with heart disease and
+ without heart disease can be entered into a probabilistic model.
+ Based on this 
+\begin_inset Quotes eld
+\end_inset
+
+training data
+\begin_inset Quotes erd
+\end_inset
+
+ the method could take new observations and give a likelihood for heart
+ disease.
+ In a constructive model, a researcher could construct an algorithm that
+ calculates the likelihood of getting heart disease from factors known to
+ cause heart disease: such as age, family history, eating habits, etc.
+ In this way, a researcher is constructing an algorithm that calculates
+ likelihood of heart disease.
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-[what examples from class?]
-\end_layout
-
 \begin_layout Paragraph
 Problem 2.
 \end_layout
@@ -500,7 +549,7 @@ In the classification method of problem solving, the problem solver selects
  from this pre-existing set.
  If no correct soultions exist, the problem solver attempts to apply heuristic
  classification methods so that solution features can be matched.
- In the case of our sudoku problem, If no candidate solutions for the puzzle
+ In the case of our sudoku problem, if no candidate solutions for the puzzle
  exist, we would build data abstraction of problem and build a heuristic
  reasoner for it.
  Then as we tried to solve the puzzle, we would compare the features of
@@ -633,8 +682,12 @@ Problem 4.
 \end_layout
 
 \begin_layout Enumerate
-Each person has an MS score with relationship to you.
- An MS score pass a certain threshold indicates a GM.
+Each person has a match score (MS) score with relationship to you.
+ This match score is like a probability that the person you are scoring
+ is right for you.
+ An MS score pass a certain threshold (aka.
+ some cutoff value) indicates a good match (GM).
+ An MS score below that treshold indicates not a GM.
  From the problem state, 1 out of every 1000 people on the website would
  make a good match for me.
  If a match score ranges from 0 to 1, then a threshold score of 
@@ -758,7 +811,7 @@ and from the lecture notes, it follows that
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.9*0.001+(1-.999)*(1-0.001)}=0.47)$
+\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.9*0.001+(1-.999)*(1-0.001)}=0.47$
 \end_inset
 
  

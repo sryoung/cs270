@@ -85,7 +85,7 @@ A PSM has several many advantages over a rule-based system:
 \begin_deeper
 \begin_layout Enumerate
 They can account for partially random outcomes or decisions that are not
- under the control fo the decision maker.
+ under the control of the decision maker.
 \end_layout
 
 \begin_layout Enumerate
@@ -134,8 +134,14 @@ Skeletal plan refinement:
 \end_layout
 
 \begin_layout Itemize
-http://download.springer.com/static/pdf/235/art%253A10.1007%252FBF00244995.pdf?auth6
-6=1392450919_08e65cf9b243df8e1069770f22fae3fe&ext=.pdf
+\begin_inset CommandInset href
+LatexCommand href
+name "Skeletal Plan Refinement Paper"
+target "• http://download.springer.com/static/pdf/235/art%253A10.1007%252FBF00244995.pdf?auth66=1392450919_08e65cf9b243df8e1069770f22fae3fe&ext=.pdf"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -543,7 +549,7 @@ In the classification method of problem solving, the problem solver selects
  from this pre-existing set.
  If no correct soultions exist, the problem solver attempts to apply heuristic
  classification methods so that solution features can be matched.
- In the case of our sudoku problem, If no candidate solutions for the puzzle
+ In the case of our sudoku problem, if no candidate solutions for the puzzle
  exist, we would build data abstraction of problem and build a heuristic
  reasoner for it.
  Then as we tried to solve the puzzle, we would compare the features of
@@ -559,16 +565,32 @@ In the classification method of problem solving, the problem solver selects
 \end_layout
 
 \begin_layout Enumerate
-In order to describe sudoku as a search problem, we need to define the 
+In a search problem, one fixes parameter values accoridng to some constraint,
+ the goal of the search being a value for each parameter that satisfies
+ all the constraints.
+ We can solve this then using depth first search, which will in the worst
+ case explore every node.
+ In order to describe sudoku as a search problem, we need to define the
+ 
 \series bold
 goal state
 \series default
 .
  In this case the goal state is a state where all the constraints of the
- sudoku puzzle(listed in part a) are satisfied.
+ sudoku puzzle (listed in part a) are satisfied.
  If we model the puzzle as a graph search, the nodes will be the states
- that the puzzle possible state that the puzzle can have and the edges would
- be the entry that got us to that state.
+ that the puzzle can have and the edges would be the entry that got us to
+ that state.
+ Each node would represent a new partially completed sudoku puzzle and each
+ edge would represent adding one more 
+\begin_inset Quotes eld
+\end_inset
+
+number
+\begin_inset Quotes erd
+\end_inset
+
+ to the sudoku board.
  We then start from the initial state and try every digit as a solution
  to the puzzle.
  If we get to a state where the constraints are violated, we mark that particula
@@ -805,7 +827,7 @@ and from the lecture notes, it follows that
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.9*0.001+(1-.999)*(1-0.001)}=0.47)$
+\begin_inset Formula $P(D|S)=\frac{.9*0.001}{.9*0.001+(1-.999)*(1-0.001)}=0.47$
 \end_inset
 
  
