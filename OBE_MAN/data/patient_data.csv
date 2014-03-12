@@ -1,3 +1,4 @@
-Name,Age,Weight(kg),Height(cm),Sex,TargetWeight(kg), ID
-John Doe,21,80,180,M,80,1
-Jane Austen,21,50,150,M,80,2
+Name,Age,Weight(kg),Height(cm),Sex,TargetWeight(kg), ID, EconomicClass
+John Doe,21,80,180,M,80,1,middle
+Jane Austen,21,50,150,M,80,2,low
+Jane Doe,21,90,150,M,80,3,high

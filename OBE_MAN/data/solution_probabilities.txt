@@ -4,24 +4,24 @@ age:greater_than 13:0.8
 bmi:greater_than 25:0.4
 bmi:greater_than 30:0.2
 bmi:greater_than 35:0.1
-econ_status:middle_class:0.8
-sex:male:1
-sex:female:1
+econ_status:middle:0.8
+sex:f:1.0
+sex:m:1.0
 #Double the cost of food
 age:less_than 13:0.2
-age:greater_than 13:0.8
+age:greater_than 13:0.5
 bmi:greater_than 25:0.4
 bmi:greater_than 30:0.2
 bmi:greater_than 35:0.1
-sex:male:1
-sex:female:1
-econ_status:middle_class:0.2
+sex:f:1.0
+sex:m:1.0
+econ_status:middle:0.952
 #Do 10 minutes of cardio per day
 age:less_than 13:0.2
 age:greater_than 13:0.8
 bmi:greater_than 25:0.4
 bmi:greater_than 30:0.2
 bmi:greater_than 35:0.1
-sex:male:1
-sex:female:1
-econ_status:middle_class:0.2
+sex:m:1.0
+sex:f:0.8
+econ_status:middle:0.2

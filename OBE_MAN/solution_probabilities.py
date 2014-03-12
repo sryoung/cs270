@@ -18,11 +18,12 @@ class SolutionProbabilities:
         else:
           self.probabilities[key].append(data)
 
-  def getProbs(self, patient):
-    return SolutionProbabilities().__getPatientPobabilityData(patient)
+  def getStrategyProbabilities(self):
+    return self.probabilities
 
-  @staticmethod
-  def __getPatientPobabilityData(patient):
-    print patient
+
+  # @staticmethod
+  # def __getPatientPobabilityData(patient):
+  #   print patient
 
 
