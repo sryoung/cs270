@@ -1,5 +1,5 @@
 # System for obesity management for CS270 project
-# Lennon Chimbumu Stephanie Young 
+# Lennon Chimbumu Stephanie Young
 
 from awesome_print import ap
 import sys
@@ -21,6 +21,10 @@ if __name__ == "__main__":
   read_patient_data('data/patient_data.csv')
   probability_rules = SolutionProbabilities('data/solution_probabilities.txt')
 
-  print patients[1].getPatientRecommendetion(probability_rules.getStrategyProbabilities())
-  print '######################'
-  print patients[2].getPatientRecommendetion(probability_rules.getStrategyProbabilities())
+  # recommended_course =  patients[1].getPatientRecommendetion(probability_rules.getStrategyProbabilities())
+  # print recommended_course
+  # patients[1].getPatientFeedback(recommended_course, feedback='reject')
+  # recommended_course =  patients[1].getPatientRecommendetion(probability_rules.getStrategyProbabilities())
+  # print recommended_course
+  # rejected_solutions = patients[1].getRejectedSoultions()
+  # print rejected_solutions
